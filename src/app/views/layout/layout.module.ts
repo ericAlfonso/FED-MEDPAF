@@ -4,7 +4,7 @@ import { LayoutComponent } from './layout.component';
 import { NavbarModule } from '../../components/navbar/navbar.module';
 import { RouterModule } from '@angular/router';
 
-const routes = [{ path: '', component: LayoutComponent }];
+const routes = [{ path: '', component: LayoutComponent, children: [] }];
 
 @NgModule({
   declarations: [LayoutComponent],
