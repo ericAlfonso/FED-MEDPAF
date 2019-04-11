@@ -5,8 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutModule } from './views/layout/layout.module';
 
+import { IncidentComponent } from './components/incidents/incident.component';
+
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, IncidentComponent],
   imports: [BrowserModule, AppRoutingModule, LayoutModule],
   providers: [],
   bootstrap: [AppComponent]
