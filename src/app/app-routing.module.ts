@@ -5,6 +5,11 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: './views/layout/layout.module#LayoutModule'
+  },
+  {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'home'
   }
 ];
 
