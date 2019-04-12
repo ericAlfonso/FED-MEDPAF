@@ -7,6 +7,10 @@ const routes: Routes = [
     loadChildren: './views/layout/layout.module#LayoutModule'
   },
   {
+    path: 'incidents',
+    loadChildren: './views/incident/incident.module#IncidentModule'
+  },
+  {
     path: '',
     pathMatch: 'full',
     redirectTo: 'home'

@@ -4,7 +4,18 @@ import { LayoutComponent } from './layout.component';
 import { NavbarModule } from '../../components/navbar/navbar.module';
 import { RouterModule } from '@angular/router';
 
-const routes = [{ path: '', component: LayoutComponent, children: [] }];
+const routes = [
+  {
+    path: '',
+    component: LayoutComponent,
+    children: [
+      {
+        path: 'incidents',
+        loadChildren: '../incidents/incident.module#IncidentModule'
+      }
+    ]
+  }
+];
 
 @NgModule({
   declarations: [LayoutComponent],

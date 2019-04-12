@@ -4,10 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { IncidentComponent } from './views/incidents/incident.component';
-
 @NgModule({
-  declarations: [AppComponent, IncidentComponent],
+  declarations: [AppComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
