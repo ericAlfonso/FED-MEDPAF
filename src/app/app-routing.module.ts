@@ -7,6 +7,10 @@ const routes: Routes = [
     loadChildren: './views/layout/layout.module#LayoutModule'
   },
   {
+    path: 'workers',
+    loadChildren: './views/workers/workers.module#WorkersModule'
+  },
+  {
     path: '',
     pathMatch: 'full',
     redirectTo: 'home'

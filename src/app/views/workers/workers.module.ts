@@ -1,15 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LayoutComponent } from './layout.component';
+import { WorkersComponent } from './workers.component';
 import { NavbarModule } from '../../components/navbar/navbar.module';
 import { RouterModule } from '@angular/router';
-import { WorkersComponent } from '../workers/workers.component';
 
-const routes = [{ path: '', component: LayoutComponent, children: [] }];
+const routes = [{ path: '', component: WorkersComponent, children: [] }];
 
 @NgModule({
-  declarations: [LayoutComponent],
+  declarations: [WorkersComponent],
   imports: [CommonModule, NavbarModule, RouterModule.forChild(routes)],
-  exports: [LayoutComponent]
+  exports: [WorkersComponent]
 })
-export class LayoutModule {}
+export class WorkersModule {}
