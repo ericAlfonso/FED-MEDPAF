@@ -7,7 +7,12 @@ const routes = [
   {
     path: '',
     component: LayoutComponent,
-    children: []
+    children: [
+      {
+        path: 'workers',
+        loadChildren: '../workers/workers.module#WorkersModule'
+      }
+    ]
   }
 ];
 
