@@ -4,7 +4,7 @@ import { WorkersComponent } from './workers.component';
 import { NavbarModule } from '../../components/navbar/navbar.module';
 import { RouterModule } from '@angular/router';
 
-const routes = [{ path: '', component: WorkersComponent, children: [] }];
+const routes = [{ path: '', component: WorkersComponent }];
 
 @NgModule({
   declarations: [WorkersComponent],

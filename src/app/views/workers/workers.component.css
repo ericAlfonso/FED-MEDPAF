@@ -14,3 +14,7 @@ td {
   background: white;
   margin: 10px 20px;
 }
+
+.flotar {
+  float: left;
+}
