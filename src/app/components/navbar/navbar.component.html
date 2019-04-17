@@ -9,6 +9,7 @@
   >
     <a class="nav-link">Trabajadores</a>
   </li>
+
   <li
     class="nav-item"
     [routerLink]="['', 'home', 'incidents']"
@@ -16,13 +17,15 @@
   >
     <a class="nav-link">Incidencias</a>
   </li>
+
   <li
     class="nav-item"
     [routerLink]="['', 'home', 'calendar']"
     routerLinkActive="active"
   >
-    <a class="nav-link">Calendario</a>
+    <a class="nav-link" [routerLink]="['/calendar']">Calendario</a>
   </li>
+
   <li
     class="nav-item"
     [routerLink]="['', 'home', 'reports']"

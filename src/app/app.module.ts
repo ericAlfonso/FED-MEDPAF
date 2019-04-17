@@ -5,10 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutModule } from './views/layout/layout.module';
 
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import {CalendarioComponent} from './components/calendario/calendario.component';
+
+
+
+
 @NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, LayoutModule],
+  declarations: [AppComponent, CalendarioComponent],
+  imports: [BrowserModule, AppRoutingModule, LayoutModule, BsDatepickerModule.forRoot()],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
+
