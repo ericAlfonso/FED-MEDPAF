@@ -3,8 +3,18 @@ import { CommonModule } from '@angular/common';
 import { LayoutComponent } from './layout.component';
 import { NavbarModule } from '../../components/navbar/navbar.module';
 import { RouterModule } from '@angular/router';
-
-const routes = [{ path: '', component: LayoutComponent, children: [] }];
+const routes = [
+  {
+    path: '',
+    component: LayoutComponent,
+    children: [
+      {
+        path: 'workers',
+        loadChildren: '../workers/workers.module#WorkersModule'
+      }
+    ]
+  }
+];
 
 @NgModule({
   declarations: [LayoutComponent],
