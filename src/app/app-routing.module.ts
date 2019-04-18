@@ -1,13 +1,20 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {CalendarioComponent} from './components/calendario/calendario.component'
+
 
 const routes: Routes = [
   {
     path: 'home',
     loadChildren: './views/layout/layout.module#LayoutModule'
   },
-  {path: 'calendar',component:CalendarioComponent}
+  {
+    path: 'home/calendario',
+    loadChildren: './views/calendario/calendario.module#CalendarioModule'
+  },
+  {
+  	path: '**',
+  	redirectTo: 'home'
+  }
 ];
 
 @NgModule({
