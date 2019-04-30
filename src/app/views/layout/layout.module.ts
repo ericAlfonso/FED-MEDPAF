@@ -3,15 +3,14 @@ import { CommonModule } from '@angular/common';
 import { LayoutComponent } from './layout.component';
 import { NavbarModule } from '../../components/navbar/navbar.module';
 import { RouterModule } from '@angular/router';
-
 const routes = [
   {
     path: '',
     component: LayoutComponent,
     children: [
       {
-        path: 'incidents',
-        loadChildren: '../incidents/incident.module#IncidentModule'
+        path: 'workers',
+        loadChildren: '../workers/workers.module#WorkersModule'
       }
     ]
   }
