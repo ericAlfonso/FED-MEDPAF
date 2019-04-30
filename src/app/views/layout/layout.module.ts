@@ -17,7 +17,7 @@ const routes = [
         loadChildren: '../incidents/incident.module#IncidentModule'
       },
       {
-        path:'calendario',
+        path:'calendar',
         loadChildren: '../calendario/calendario.module#CalendarioModule'
       }
     ]

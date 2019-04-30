@@ -15,7 +15,6 @@ export class CalendarioComponent implements OnInit {
 	}
 
 	ngOnInit(){
-		console.log('Calendario');
 	}
 
 }

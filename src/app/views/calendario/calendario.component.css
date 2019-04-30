@@ -1,15 +1,9 @@
-body{
-	background: #0A97D9;
-	font-family: Arial, Sans-serif;
-
-}
-
 section{
 	width: 90%;
 	margin: 20px;
 }
 
-.contenedor{
+.container{
 	width: 80%;
 	margin: 5px 100px;
 	background: #f2f2f2;
@@ -20,7 +14,7 @@ section{
 	left: 40px;
 	display: inline-block;	
 }
-.calendarioS{
+.sectionCalendar{
 	background: #f2f2f2;
 	border: 3px solid #000;
 	position: relative;
@@ -28,7 +22,7 @@ section{
 	bottom: 20px;
 }
 
-.caja{
+.box{
 	width: 20%;
 	float: left;
 	left: 100px;
@@ -36,43 +30,15 @@ section{
 }
 
 
-.calendarioContenedor{
+.calendarContainer{
 	width: 90%;
 	height: 500px;
 	margin: 5px auto;
-	padding: 5px;
-	
+	padding: 5px;	
 }
 
-.choose{
+.inputTwo{
 	position: relative;
-	left: 430px;
-}
+	left: 350px;
 
-.rowCenter{
-	position: relative;
-	left: 425px;
-}
-
-
-.cajaU{
-	margin: 10px 90px;
-	float: right;
-}
-
-.cajaD{
-	margin: 10px 90px;
-	float: left;
-}
-
-
-.padre{
-	overflow: hidden;
-}
-
-footer{
-	width: 100%;
-	height: 50%;
-
-	background: #F809E4;
 }
