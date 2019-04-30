@@ -1,15 +1,29 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
-
 import { LayoutComponent } from './layout.component';
 import { NavbarModule } from '../../components/navbar/navbar.module';
+import { RouterModule } from '@angular/router';
+const routes = [
+  {
+    path: '',
+    component: LayoutComponent,
+    children: [
+      {
+        path: 'workers',
+        loadChildren: '../workers/workers.module#WorkersModule'
+      },
+      {
+        path: 'incidents',
+        loadChildren: '../incidents/incident.module#IncidentModule'
+      },
+      {
+        path:'calendario',
+        loadChildren: '../calendario/calendario.module#CalendarioModule'
+      }
+    ]
+  }
+];
 
-const routes = [{
-	path: '',
-	component: LayoutComponent,
-	children: []
-}];
 
 @NgModule({
   declarations: [LayoutComponent],

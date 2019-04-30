@@ -8,12 +8,15 @@ const routes: Routes = [
     loadChildren: './views/layout/layout.module#LayoutModule'
   },
   {
-    path: 'home/calendario',
-    loadChildren: './views/calendario/calendario.module#CalendarioModule'
+
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'home'
   },
   {
-  	path: '**',
-  	redirectTo: 'home'
+    path: '**',
+    redirectTo: 'home'
+
   }
 ];
 
