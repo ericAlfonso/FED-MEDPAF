@@ -6,8 +6,7 @@ import { NavbarModule } from '../../components/navbar/navbar.module';
 
 const routes = [{
 	path: '',
-	component: CalendarioComponent,
-	children: []
+	component: CalendarioComponent
 }];
 
 @NgModule({
