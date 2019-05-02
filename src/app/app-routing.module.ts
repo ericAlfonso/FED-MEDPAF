@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+
 const routes: Routes = [
   {
     path: 'home',
     loadChildren: './views/layout/layout.module#LayoutModule'
   },
   {
+
     path: '',
     pathMatch: 'full',
     redirectTo: 'home'
@@ -14,6 +16,7 @@ const routes: Routes = [
   {
     path: '**',
     redirectTo: 'home'
+
   }
 ];
 

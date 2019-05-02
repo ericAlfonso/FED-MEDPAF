@@ -15,10 +15,15 @@ const routes = [
       {
         path: 'incidents',
         loadChildren: '../incidents/incident.module#IncidentModule'
+      },
+      {
+        path:'calendar',
+        loadChildren: '../calendario/calendario.module#CalendarioModule'
       }
     ]
   }
 ];
+
 
 @NgModule({
   declarations: [LayoutComponent],
